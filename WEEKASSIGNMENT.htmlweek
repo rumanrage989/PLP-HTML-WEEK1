@@ -1,0 +1,31 @@
+const express = require('express');
+const app = express();
+const port = 3000; // Replace with your desired port
+
+// Implement your API endpoints here
+
+app.listen(port, () => {
+    console.log(Server listening on port ${port});
+});
+app.post('/api/expenses', (req, res) => {
+    const { amount, description, category } = req.body;
+
+    // Create a new expense in your database
+    const newExpense = createExpense(req.user.id, amount, description, category);
+
+    res.json(newExpense);
+});
+app.put('/api/expenses/:id', (req, res) => {
+    const { amount, description, category } = req.body;
+
+    // Update the expense in your database
+    const updatedExpense = updateExpense(req.params.id, amount, description, category);
+
+    res.json(updatedExpense);
+});
+app.delete('/api/expenses/:id', (req, res) => {
+    // Delete the expense from your database
+    deleteExpense(req.params.id);
+
+    res.sendStatus(204);
+});
