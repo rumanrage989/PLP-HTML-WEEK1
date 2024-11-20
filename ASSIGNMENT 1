@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+   <html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">            
+        <title>Intro to html</title>
+    </head>
+    <h1>To Kill a Mockingbird</h1>
+    <P>
+     The story follows Scout Finch, a young girl growing up in the American South. 
+     She witnesses the injustice and prejudice faced by her father, Atticus Finch, as he defends a Black man falsely accused of a crime.
+     Through Scout's eyes, we see the complexities of race relations and the impact of prejudice on individuals and society.
+     </P>
+     <br>
+     <img src="https://www.pexels.com/photo/northern-mockingbird-in-nature-23437043/"width="700"height="600"alt="picture of a Mockingbird.">
+<a href="https://google.com">visit google to view mockingbird</a>
+<br>
+<table border ="1">  
+    <tr> 
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+    </tr>
+
+
+</table>
+   </html>
